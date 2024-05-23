@@ -9,6 +9,7 @@ const {
   deleteUser,
   updateUser,
   loginUser,
+  changePassword
 } = require("../controllers/userController");
 // Get All Users
 router.get("/", getUsers);
@@ -21,7 +22,8 @@ router.post("/", registerValidator, createUser);
 // login  a  User
 // Delete User
 router.delete("/:id", deleteUser);
-
+// comment
 // Update User
 router.patch("/:id", updateUser);
+router.put("/change-password", changePassword);
 module.exports = router;
