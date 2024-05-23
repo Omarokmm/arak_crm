@@ -225,7 +225,6 @@ const updateIsHoldCase = async (req, res) => {
     res.status(500).json({ message: "Server Error" });
   }
 };
-// Update fitting or cadCam for a case
 
 module.exports = {
   getAllCases,
